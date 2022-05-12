@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <title>login</title>
+    <link rel = "icon" href = "imges/logo.jpg" type = "image/x-icon">
+    <script type="text/javascript" src="Java.js"></script>
+    <link rel="stylesheet" type="text/css" href="login.css">
+<link rel="stylesheet" type="text/css" href="https://localhost/login.html">
+<meta name="viewport" content="width=device-width , initial-scale=1.0">
+<meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="description" content="Login | Register in our website">
+
+</head>
+<body>
+    
+
+<div class="login">
+
+
+
+    
+    <h2>
+        
+        <img src="imges/logo2.jpg" width="100" height="50"><br>
+        Log In
+        
+        
+
+    </h2>
+    
+    <form action="login.php" method="POST" enctype="multipart/form-data">
+    
+    <hr>
+    <input type="text" placeholder="Enter E-mail" required="true" name ="username">
+    <hr>
+    <input type="password" placeholder="Enter Password" required="true" name = "password">
+    <hr>
+    <br>
+    <p style="color: white">Remember me<input type="checkbox" name="remeberme"></p>
+   <hr>
+    <button type="submit" name="submit" value="OK" class="btn">Log in</button>
+    
+    
+    </form>
+    <h3><span style="color: white">don't have an account?</span></h3>
+    <a href="Resgitration.html"><button class="btn">Sign up</button></a>
+    
+<hr>
+<h4 align ="center" style="color:white;">Sign up with Google </h4>
+<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark" align="center">
+    <script>
+      function onSignIn(googleUser) {
+        Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+             Useful data for your client-side scripts:  console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+             Useful data for your client-side scripts:  // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+      }
+    </script>
+    </div>
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

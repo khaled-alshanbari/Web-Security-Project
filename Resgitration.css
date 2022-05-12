@@ -1,0 +1,36 @@
+
+#contact{
+
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(imges/12.jpg);
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 20em;
+	color:#777;
+
+}
+
+.contact-form{
+
+	padding:1px;
+
+
+}
+
+.form-control{
+ border: none;
+ border-radius:0px;
+}
+
+
+
+
+.follow{
+	background: #efefef;
+	padding: 10px;
+	margin: 15px;
+}
+h1{
+	font-family: sans-serif;
+	font-size: 30px;
+	color: white;
+}

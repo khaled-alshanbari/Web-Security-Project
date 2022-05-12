@@ -1,0 +1,112 @@
+body{
+	padding: 0;
+	margin:0;
+	padding:0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.4)),url(imges/blur2.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	
+}
+body:hover{
+	padding: 0;
+	margin:0;
+	padding:0;
+	margin: 0;
+	width: 100%;
+	height: 100px;
+	background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.4)),url(imges/blur3.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	transition: 3s;
+	
+}
+
+h1{
+    
+	text-align: center;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 0.3em;
+	margin:0;
+	font-family: sans-serif;
+
+}
+
+ 
+
+.about-content{
+     
+	text-align: center;
+	background-size: cover;
+	background-attachment: fixed;
+	padding-top: 5em;
+	margin:50px;
+	font-size: 25px;
+	font-family: sans-serif;
+
+}
+
+
+}
+hr{
+	padding-top: -100px;
+	margin-left: 15em;
+	margin-right: 15em;
+}
+
+
+h1{
+	font-size: 40px;
+     opacity: 0;
+	 display: inline-block;
+	 animation: animate 2s linear forwards;
+
+}
+
+
+
+@keyframes animate{
+
+	 0%{
+	 	opacity: 0;
+	 	transform: rotateY(90deg);
+	 	filter: blur(10px);
+	 }
+	 100%{
+	 	opacity: 1;
+	 	transform: rotateY(360deg);
+	 	filter: blur(10px);
+	 	filter: blur(0px);
+	 } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
